@@ -10,6 +10,12 @@ terraform {
       version = "~> 2.4"
     }
   }
+
+  backend "s3" {
+    bucket = "aanil-terraform-state-994114887181"
+    key    = "csv-etl-pipeline/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {

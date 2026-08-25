@@ -13,7 +13,7 @@ variable "project_name" {
 variable "alert_email" {
   description = "Email address to receive CloudWatch alarm notifications"
   type        = string
-  default     = "you@example.com"
+  default     = "anilreddy0169@gmail.com"
 }
 
 variable "environment" {
